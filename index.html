@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label>Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <small class="error" id="nameError"></small>
+
+      <label>Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <small class="error" id="emailError"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+      <small class="error" id="passwordError"></small>
+
+      <label>Phone:</label>
+      <input type="text" id="phone" placeholder="Enter phone number" required />
+      <small class="error" id="phoneError"></small>
+
+      <button type="submit" id="submitBtn" disabled>Register</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
